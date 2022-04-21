@@ -2,52 +2,56 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <script src="https://kit.fontawesome.com/59c032d6c4.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="Restaurant.css"/>
+        <!-- external style sheet -->
+        <link rel="stylesheet" href="main.css"/>
+        <!-- media query -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- external fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:ital@1&family=Roboto&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/59c032d6c4.js" crossorigin="anonymous"></script>
     </head>
 <body>
     <!--NAV BAR-->
     <!--MAIN-->
-    <main id="main">
-        <div class="navbar">
-            <ul>
-                <li><a href="#main">Home</a></li>
-                <li><a href="#section2">About Us</a></li>
-                <li><a href="#section3">Menu</a></li>
-                <li><a href="#section5">Reviews</a></li>
-                <li id="home"><a href="#section4">Hours</a></li>
-            </ul>
-        </div>
-        <section>
+    <main>
+        <nav>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <div class="mainMenu">
+                <ul>
+                    <li class="clickli"><a href="#main">Home</a></li>
+                    <li class="clickli"><a href="#section2">About Us</a></li>
+                    <li class="clickli"><a href="#section3">Menu</a></li>
+                    <li class="clickli"><a href="#section5">Reviews</a></li>
+                    <li class="clickli"><a href="#section4">Hours</a></li>
+                    <div class="closeMenu"><i class="fa fa-times"></i></div>
+                </ul>
+            </div>
+        </nav>
+        <div>
             <h1> Verseux</h1>
-            <div>CHICAGO</div>
-        </section>
-        
+            <span>CHICAGO</span>
+        </div>
     </main>
-    <!--SECTION 2-->
+    <!--SECTION 2/ABOUT-->
     <section class="section2" id="section2">
         <span class="section-titles" id="about-us">About Us</span>
         <h2>Our Restaurant Story</h2>
         <div>
-            <div>
-                <div><img src="chefs.jpg"></div>
-            </div>
-            <div>    
-                <p>While in culinary school in Pairs, Chef Jacob used to frequent the cafes around Paris. In one of these cafes is he
-                    met Chef Peter Guillere and Chef Antonio. As aspiring chefs, they used to pass by cafes before their dinner shifts. 
-                    They were inspired by the light seasonal fare always on display. This inspired the duo to open their own Parisan cafe in a commuter town like Chicago. 
-                    In 2020, they decided to take a big risk and open in the middle of a pandemic. And a good risk they took because it was what a neighborhood like
-                    Lincoln Square needed. They were heavily supported by the community and are slowly being a staple in Chicago.  </p>
-            </div>
+            <img src="chefs.jpg">   
+            <p>While in culinary school in Pairs, Chef Jacob used to frequent the cafes around Paris. In one of these cafes is he
+                met Chef Peter Guillere and Chef Antonio. As aspiring chefs, they used to pass by cafes before their dinner shifts. 
+                They were inspired by the light seasonal fare always on display. This inspired the duo to open their own Parisan cafe in a commuter town like Chicago. 
+                In 2020, they decided to take a big risk and open in the middle of a pandemic. And a good risk they took because it was what a neighborhood like
+                Lincoln Square needed. They were heavily supported by the community and are slowly being a staple in Chicago.  
+            </p>
         </div>
     </section>
-    <!--SECTION 3-->
+    <!--SECTION 3/MENU GRID-->
     <section class="section3" id="section3">
         <span class="section-titles">Menu</span>
         <h2>Menu Favorites</h2>
@@ -59,18 +63,18 @@
             </ul>
         </div>
         <div class="pic-div">
-            <div id="pic1"></div>
-            <div id="pic2"></div>
-            <div id="pic3"></div>
-            <div id="pic4"></div>
-            <div id="pic5"></div>
-            <div id="pic6"></div>
-            <div id="pic7"></div>
-            <div id="pic8"></div>
+            <img class="image-grid-col-2" src="shrimp-plate.jpg">
+            <img class="image-grid-col-2 image-grid-row-2" src="3cocktails.jpg">
+            <img class="" src="tuna2.jpg">
+            <img class="" src="cocktails.jpg">
+            <img class="image-grid-col-2 image-grid-row-2" src="salmon.jpg">
+            <img class="" src="salad.jpg">
+            <img class="" src="pink cocktail2.jpg">
+            <img class="image-grid-col-2" src="procu.jpg">
         </div>
     </section>
     
-    <!--SECTION 4-->
+    <!--SECTION 4 HOURS-->
     <section class="section4" id="section4">
         <div class="section4div1">
             <span class="section-titles">Book Table</span>
@@ -89,7 +93,7 @@
             </div>
         </div>
     </section>
-    <!--SECTION 5-->
+    <!--SECTION 5 CUSTOMER REVIEW-->
     <section class="section5" id=section5>
         <span class="section-titles">Reviews</span>
         <h2>Customer's Say</h2>
@@ -136,7 +140,7 @@
     </section>
     <!--FOOTER-->
     <footer>
-        <div>Verseux</div>
+        <h1>Verseux</h1>
         <div>
             <i class="fa-brands fa-facebook-square"></i>
             <i class="fa-brands fa-instagram"></i>
