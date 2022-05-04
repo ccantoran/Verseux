@@ -50,10 +50,11 @@ a:hover{
 }
 @media screen and (max-width:480px){
     nav{
-        position: fixed;
+        position:fixed;
         width: 100%; 
         background:#F7D330;
         height:40px;
+        z-index: 1;
     }
     .mainMenu>ul{
         display: flex;
@@ -338,24 +339,65 @@ SECTION 3----MENU
     grid-auto-rows:var(--row-height);
     gap:var(--gap);
     width:80%;
-    height:auto;
     margin-bottom: 10%;
 }
-.pic-div>img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.pic-div>img:hover{
-    opacity:85%;
-    transition:opacity 0s;
-}
-.image-grid-col-2{
+.grid-col-2{
     grid-column: span 2;
 }
-.image-grid-row-2{
+.grid-row-2{
     grid-row: span 2;
 }
+.thefront{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    backface-visibility: hidden;
+    overflow: hidden;
+    position:absolute;
+    border-radius: 5px;
+}
+.thecard{
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    position:relative;
+    background:#f7DD80;
+    border-radius: 5px;
+}
+.thecard:hover{
+    transform: rotateY(180deg);
+}
+.theback{
+    position: absolute;
+    backface-visibility: hidden; 
+    overflow: hidden; 
+    transform: rotateY(180deg);
+    text-align: center;
+    font-family: "roboto";
+    color:white;
+}
+.thebackdiv{
+    margin: 25% 15% 0 15%;
+}
+.thebackdiv2{
+    margin: 40% 15% 0 15%;
+}
+.flipTitle1{
+    font-size: 20px;
+    margin-top:10%;
+    left: 0;
+    right: 0;
+}
+.flipTitle2{
+    font-size: 25px;
+    margin-top: 30%;
+    left: 0;
+    right: 0;
+}
+.thebackdiv3{
+    margin: 50% 15% 0 15%;
+    font-size: 20px;
+}
+
 @media (min-width:491px) and (max-width:850px) {
     .pic-div{
         --num-cols:2;
@@ -367,13 +409,32 @@ SECTION 3----MENU
             --num-cols:2;
             --row-height: auto;
         }
+        .thefront{
+            height:250px;
+            object-fit: cover;
+            position:absolute;
+        }
+        .thecard{
+            height:250px;
+            position:relative;
+        }
+        .theback{
+            font-size: .7em;
+            height:auto;
+            position:absolute;
+        }
+        .flipTitle2{
+            margin-top: 10%;
+        }
+        .thebackdiv3{
+            margin: 25% 15% 0 15%;
+        }
     }
 
 
-
-/*///////////////////////////////
+/* /////////////////////////////
 SECTION 4 ---HOURS
-///////////////////////////////*/
+///////////////////////// */
 
 
 .section4{
