@@ -1,11 +1,9 @@
 # Welcome to my Verseux Repo!
-This project I create a website for a local Chicago restaurant named Veseux. This cafe was new to the scene and needed to establish their online presence!
+This project I created a website for a local Chicago restaurant named Veseux. This cafe was new to the scene and needed to establish their online presence!
 
 Check out the live site:
 
 https://verseaux.netlify.app/
-
-Picture 
 
 
 # How It Was Made
