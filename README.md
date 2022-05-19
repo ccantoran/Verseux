@@ -5,7 +5,7 @@ Check out the live site:
 
 https://verseaux.netlify.app/
 
-![alt text](http://url/to/github verseux.png)
+![alt text](http://url/to/github-verseux.png)
 
 
 # How It Was Made
