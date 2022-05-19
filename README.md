@@ -5,6 +5,8 @@ Check out the live site:
 
 https://verseaux.netlify.app/
 
+![alt text](http://url/to/github verseux.png)
+
 
 # How It Was Made
 Initially, my first design was rejected and a new layout had to be created for the client. Happy to accomodate! In the changes, we included to showcase the dishes 
