@@ -15,7 +15,7 @@ served. The most elegant way to show this was to show the pictures in a grid lay
 side. This card flip was made for all screen sizes. The tech used in this project was HTML, CSS and Javascript. 
 
 # Optimizations
-Some optimizations that could be done would be to reduce and compress the images just a tad bit more. This would help the images load instanteously rather than having the user wait for the pictures to load. 
+Some optimizations that could be done would be to reduce and compress the images just a tad bit more. This would help the images load instanteously rather than having the user wait for the pictures to load. In addition I would also used deferred Javascript to have the page load quicker. 
 
 # Lessons learned
 
