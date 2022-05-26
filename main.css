@@ -328,6 +328,11 @@ SECTION 3----MENU
     height:auto;
     font-family:"roboto";
 }
+.section3>p{
+    color:white;
+    font-weight: 550;
+    font-family: "roboto";
+}
 .pic-div{
     --gap:16px;
     --num-cols:4;
